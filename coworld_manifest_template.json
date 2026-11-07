@@ -1,5 +1,5 @@
 {
-  "$schema": "https://raw.githubusercontent.com/Metta-AI/metta/main/packages/coworld/src/coworld/coworld_manifest_schema.json",
+  "$schema": "https://raw.githubusercontent.com/softmax-universe/coworld/main/src/coworld/coworld_manifest_schema.json",
   "tags": [
     "battle-royale",
     "elimination",
@@ -25,7 +25,7 @@
       "run": [
         "/bin/ctf"
       ],
-      "source_url": "https://github.com/Metta-AI/cogame-paintbot/tree/main",
+      "source_url": "https://github.com/softmax-universe/cogame-paintbot/tree/main",
       "resources": {
         "requests": {
           "cpu": "3",
@@ -1080,17 +1080,17 @@
     "protocols": {
       "player": {
         "type": "uri",
-        "value": "https://github.com/Metta-AI/cogame-paintbot/blob/main/docs/POLICY_WASM.md"
+        "value": "https://github.com/softmax-universe/cogame-paintbot/blob/main/docs/POLICY_WASM.md"
       },
       "global": {
         "type": "uri",
-        "value": "https://github.com/Metta-AI/cogame-paintbot/blob/main/docs/PROTOCOL.md"
+        "value": "https://github.com/softmax-universe/cogame-paintbot/blob/main/docs/PROTOCOL.md"
       }
     },
     "docs": {
       "readme": {
         "type": "uri",
-        "value": "https://github.com/Metta-AI/cogame-paintbot/blob/main/README.md"
+        "value": "https://github.com/softmax-universe/cogame-paintbot/blob/main/README.md"
       },
       "pages": [
         {
@@ -1098,7 +1098,7 @@
           "title": "Writing a policy",
           "content": {
             "type": "uri",
-            "value": "https://github.com/Metta-AI/cogame-paintbot/blob/main/docs/POLICY_WASM.md"
+            "value": "https://github.com/softmax-universe/cogame-paintbot/blob/main/docs/POLICY_WASM.md"
           }
         },
         {
@@ -1106,7 +1106,7 @@
           "title": "The plays",
           "content": {
             "type": "uri",
-            "value": "https://github.com/Metta-AI/cogame-paintbot/blob/main/docs/designs/BR_PLAYS.md"
+            "value": "https://github.com/softmax-universe/cogame-paintbot/blob/main/docs/designs/BR_PLAYS.md"
           }
         },
         {
@@ -1114,7 +1114,7 @@
           "title": "Rules",
           "content": {
             "type": "uri",
-            "value": "https://github.com/Metta-AI/cogame-paintbot/blob/main/docs/RULES.md"
+            "value": "https://github.com/softmax-universe/cogame-paintbot/blob/main/docs/RULES.md"
           }
         }
       ]
@@ -1214,7 +1214,7 @@
       "name": "Baseline",
       "description": "The classic Paintbot baseline bot (players/baseline) as a wasm policy: cover-aware pathfinding, a six-strong attack wave, overwatch and a home defender, driving Sprite v1 input masks for the campaign's 1v1/2v2/4ffa cells.",
       "file": "policies/wasm/dist/baseline.wasm",
-      "source_url": "https://github.com/Metta-AI/cogame-paintbot/tree/main/policies/wasm/baseline"
+      "source_url": "https://github.com/softmax-universe/cogame-paintbot/tree/main/policies/wasm/baseline"
     },
     {
       "type": "player",
@@ -1222,7 +1222,7 @@
       "name": "Baseline Rusher",
       "description": "The classic baseline tuned to rush: wider engagement ranges and an earlier late-game push.",
       "file": "policies/wasm/dist/baseline-rusher.wasm",
-      "source_url": "https://github.com/Metta-AI/cogame-paintbot/tree/main/policies/wasm/baseline"
+      "source_url": "https://github.com/softmax-universe/cogame-paintbot/tree/main/policies/wasm/baseline"
     },
     {
       "type": "player",
@@ -1230,7 +1230,7 @@
       "name": "Baseline Guard",
       "description": "The classic baseline tuned to defend: a longer thief hunt, shallower flanks and a steadier back line.",
       "file": "policies/wasm/dist/baseline-guard.wasm",
-      "source_url": "https://github.com/Metta-AI/cogame-paintbot/tree/main/policies/wasm/baseline"
+      "source_url": "https://github.com/softmax-universe/cogame-paintbot/tree/main/policies/wasm/baseline"
     }
   ],
   "variants": [
