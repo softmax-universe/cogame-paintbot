@@ -7,7 +7,7 @@
 > play-seat wire. Start at [`docs/POLICY_WASM.md`](docs/POLICY_WASM.md) for
 > the module contract, the Nim SDK (`policy_sdk/`), and the three starter
 > personas ported to wasm (`policies/wasm/starter/`). The engine is a fork of
-> [coworld-ctf](https://github.com/Metta-AI/coworld-ctf) (`upstream`), and
+> [coworld-ctf](https://github.com/softmax-universe/coworld-ctf) (`upstream`), and
 > everything below this note describes that engine unchanged.
 >
 > Build and try it locally:
@@ -44,7 +44,7 @@ This repo is the engine — historically "Coworld CTF". The classic two-team
 capture-the-flag ruleset documented below remains a reference for shared combat
 mechanics.
 
-It is a fork of [Crewrift](https://github.com/Metta-AI/coworld-crewrift). It keeps
+It is a fork of [Crewrift](https://github.com/softmax-universe/coworld-crewrift). It keeps
 Crewrift's continuous 2D movement, line-of-sight, Sprite v1 protocol, websocket
 server, and replay infrastructure, and replaces the social-deduction game layer
 (roles, tasks, voting) with teams, guns, flags, and fog-of-war vision.
@@ -324,7 +324,7 @@ docker run --rm -d \
 ### Deprecated Sprite v1 policy references
 
 The retired policies speak the shared Bitworld Sprite v1 protocol:
-<https://github.com/Metta-AI/bitworld/blob/master/docs/sprite_v1.md>
+<https://github.com/softmax-universe/bitworld/blob/master/docs/sprite_v1.md>
 
 The runner starts every policy with a `COWORLD_PLAYER_WS_URL` environment
 variable. The policy connects to that websocket, plays until the game ends, and

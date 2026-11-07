@@ -14,7 +14,7 @@ import pathlib
 REPO = pathlib.Path(__file__).resolve().parent.parent
 SOURCE = REPO / "coworld_manifest_paintbot.json"
 TARGET = REPO / "coworld_manifest_template.json"
-REPO_URL = "https://github.com/Metta-AI/cogame-paintbot"
+REPO_URL = "https://github.com/softmax-universe/cogame-paintbot"
 PERSONAS = ["cautious", "aggressive", "collaborative"]
 CERT_SEATS = 16
 # The campaign settles each board cell with a classic match on one of these
@@ -60,9 +60,6 @@ def main() -> int:
         "image": "{{GAME_IMAGE}}",
         "run": ["/bin/ctf"],
         "source_url": f"{REPO_URL}/tree/main",
-        "env": {
-            "ANTHROPIC_API_KEY_URI": "secret://coworld/paintbot-wasm/anthropic_api_key",
-        },
         # Game-hosted seats share the game container's reservation: sixteen
         # policy-host processes measured at ~76 MiB RSS each (a wasmtime
         # engine plus a ~700 KiB starter module) on top of the engine itself.
